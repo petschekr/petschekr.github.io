@@ -15,7 +15,7 @@
 		margin: 0 0 _size(element-margin) 0;
 
 		section {
-			@include padding(3em, 3em, (0.5em, 0, 0, 4em));
+			@include padding(2em, 1em, (0.5em, 0, 0, 5em));
 			width: 50%;
 			border-top: solid 1px _palette(border);
 			position: relative;
@@ -28,6 +28,25 @@
 				border-left: solid 1px _palette(border);
 			}
 
+			&.as-button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 3em 1em;
+
+				.icon {
+					position: static;
+					margin: 0;
+					top: 0;
+					left: 0;
+					margin-right: 1em;
+				}
+				
+				h3 {
+					margin: 0;
+				}
+			}
+
 			.icon {
 				@include vendor('transition', (
 					'opacity #{_duration(activation) * 0.5} ease',
@@ -36,8 +55,8 @@
 				@include vendor('transition-delay', '1s');
 				@include vendor('transform', 'scale(1)');
 				position: absolute;
-				left: 3em;
-				top: 3em;
+				left: 2em;
+				top: 2em;
 				opacity: 1;
 			}
 
