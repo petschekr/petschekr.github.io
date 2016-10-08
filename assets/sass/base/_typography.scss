@@ -40,6 +40,10 @@
 			color: _palette(fg-bold);
 		}
 	}
+	abbr {
+		border-bottom: dotted 1px _palette(fg-light);
+		cursor: pointer;
+	}
 
 	strong, b {
 		color: _palette(fg-bold);

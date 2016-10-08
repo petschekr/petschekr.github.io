@@ -27,6 +27,14 @@
 			&:nth-child(2n) {
 				border-left: solid 1px _palette(border);
 			}
+			&.wide {
+				width: 100%;
+				border-left: none;
+				border-top: solid 1px _palette(border);
+				&:nth-child(1) {
+					border-top: none;
+				}
+			}
 
 			&.as-button {
 				display: flex;
