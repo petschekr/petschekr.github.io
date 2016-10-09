@@ -208,3 +208,24 @@
 	});
 
 })(jQuery);
+
+// Animate between the different hello world headers
+window.onload = function() {
+	// Translate by -3.5em every transition;
+	var advanceData = {
+		totalHeaders: document.querySelectorAll("#scroller .elevator li").length,
+		elevator: document.querySelector("#scroller .elevator"),
+		position: 0
+	};
+	
+	function advance() {
+		this.position += 1;
+		if (this.position >= this.totalHeaders)
+			this.position = 0;
+
+		var offset = document.querySelector("#scroller .elevator li").scrollHeight;
+		this.elevator.style.transform = "translateY(" + this.position * -62 + "px)";
+	}
+	
+	setInterval(advance.bind(advanceData), 2000);
+}

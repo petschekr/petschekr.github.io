@@ -32,3 +32,29 @@
 			background-attachment: scroll;
 		}
 	}
+	#scroller {
+		list-style-type: none;
+		margin-bottom: 1.25em;
+		padding: 0;
+
+		max-height: 70px;
+		overflow: hidden;
+		
+		li {
+			padding: 0;
+			font-size: 0.9em;
+			height: 62px;
+		}
+		pre {
+			margin-bottom: 0;
+		}
+		h1 {
+			margin: 0;
+			padding: 0;
+		}
+		.elevator {
+			// Translate by -5.5em every transition;
+			transform: translateY(0em);
+			transition: transform 0.3s ease-in-out;
+		}
+	}
