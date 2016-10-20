@@ -211,7 +211,7 @@
 
 // Animate between the different hello world headers
 window.onload = function() {
-	// Translate by -3.5em every transition;
+	// Translate by -62px every transition;
 	var advanceData = {
 		totalHeaders: document.querySelectorAll("#scroller .elevator li").length,
 		elevator: document.querySelector("#scroller .elevator"),
