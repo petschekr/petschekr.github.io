@@ -2867,9 +2867,10 @@ table {
   #scroller li {
     padding: 0;
     font-size: 0.9em;
-    height: 62px; }
+    height: 74px; }
   #scroller pre {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    height: 74px; }
   #scroller h1 {
     margin: 0;
     padding: 0; }

@@ -211,7 +211,7 @@
 
 // Animate between the different hello world headers
 window.onload = function() {
-	// Translate by -62px every transition;
+	// Translate by -74px every transition;
 	var advanceData = {
 		totalHeaders: document.querySelectorAll("#scroller .elevator li").length,
 		elevator: document.querySelector("#scroller .elevator"),
@@ -224,7 +224,7 @@ window.onload = function() {
 			this.position = 0;
 
 		var offset = document.querySelector("#scroller .elevator li").scrollHeight;
-		this.elevator.style.transform = "translateY(" + this.position * -62 + "px)";
+		this.elevator.style.transform = "translateY(" + this.position * -74 + "px)";
 	}
 	
 	setInterval(advance.bind(advanceData), 2000);
