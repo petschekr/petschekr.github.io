@@ -1,0 +1,32 @@
+{
+  "name": "petschekr.github.io",
+  "version": "1.0.0",
+  "description": "Ryan Petschek's website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": {
+    "name": "Ryan Petschek",
+    "email": "petschekr@gmail.com",
+    "url": "https://github.com/petschekr"
+  },
+  "license": "MIT",
+  "homepage": "https://ryanpetschek.me",
+  "private": true,
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "git-rev-sync": "^1.8.0",
+    "handlebars": "^4.0.6",
+    "serve-static": "^1.11.1"
+  },
+  "devDependencies": {
+    "@types/compression": "0.0.33",
+    "@types/express": "^4.0.34",
+    "@types/handlebars": "^4.0.31",
+    "@types/node": "^7.0.0",
+    "@types/serve-static": "^1.7.31"
+  }
+}
