@@ -1037,8 +1037,8 @@ table.alt tbody tr td {
       bottom: 5vh;
       font-size: 1.5em; }
     #header.alt > * {
-      transition: opacity 3s ease;
-      transition-delay: 0.5s;
+      transition: opacity 1.5s ease;
+      transition-delay: 0.4s;
       opacity: 1; }
     #header.alt .logo {
       transition: opacity 1s ease, transform 0.5s ease;
