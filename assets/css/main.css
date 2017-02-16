@@ -1040,15 +1040,18 @@ table.alt tbody tr td {
       transition: opacity 1.5s ease;
       transition-delay: 0.4s;
       opacity: 1; }
-    #header.alt .logo {
-      transition: opacity 1s ease, transform 0.5s ease;
-      transition-delay: 0s;
-      display: block;
-      margin: 0 0 1.5em 0; }
-      #header.alt .logo img {
-        display: block;
-        margin: 0 auto;
-        max-width: 75%; }
+    #header.alt #scroller {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 0 0.25em 0;
+      max-height: 88px;
+      overflow: hidden; }
+      #header.alt #scroller li {
+        padding: 0;
+        height: 88px; }
+      #header.alt #scroller .elevator {
+        transform: translateY(0em);
+        transition: transform 0.3s ease-in-out; }
   @media screen and (max-width: 1280px) {
     #header {
       padding: 4em 4em 0.1em 4em ; }
@@ -1070,7 +1073,11 @@ table.alt tbody tr td {
       #header.alt {
         padding: 4em 2em 1em 2em ; }
         #header.alt h1 {
-          font-size: 2.5em; } }
+          font-size: 2.5em; }
+        #header.alt #scroller {
+          max-height: 88px; }
+          #header.alt #scroller li {
+            height: 88px; } }
   @media screen and (max-width: 480px) {
     #header {
       padding: 3em 1.5em 0.1em 1.5em ; }

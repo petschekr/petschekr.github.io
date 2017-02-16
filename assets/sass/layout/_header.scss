@@ -48,19 +48,22 @@
 				opacity: 1;
 			}
 
-			.logo {
-				@include vendor('transition', (
-					'opacity 1s ease',
-					'transform 0.5s ease'
-				));
-				@include vendor('transition-delay', '0s');
-				display: block;
-				margin: 0 0 (_size(element-margin) * 0.75) 0;
+			#scroller {
+				list-style-type: none;
+				padding: 0;
+				margin: 0 0 (_size(element-margin) * 0.125) 0;
 
-				img {
-					display: block;
-					margin: 0 auto;
-					max-width: 75%;
+				max-height: 88px;
+				overflow: hidden;
+				
+				li {
+					padding: 0;
+					height: 88px;
+				}
+				.elevator {
+					// Translate by -5.5em every transition;
+					transform: translateY(0em);
+					transition: transform 0.3s ease-in-out;
 				}
 			}
 		}
@@ -98,6 +101,12 @@
 
 				h1 {
 					font-size: 2.5em;
+				}
+				#scroller {
+					max-height: 88px;
+					li {
+						height: 88px;
+					}
 				}
 			}
 		}
