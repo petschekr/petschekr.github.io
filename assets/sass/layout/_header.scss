@@ -29,6 +29,7 @@
 
 			h1 {
 				font-size: 3.25em;
+				white-space: nowrap;
 			}
 			
 			p:first-of-type {
@@ -48,22 +49,77 @@
 				opacity: 1;
 			}
 
+			$translateAmount: 88px;
+			@keyframes moveup {
+				0% {
+					transform: translateY(0);
+				}
+				6.25% {
+					transform: translateY(0);
+				}
+				12.5% {
+					transform: translateY($translateAmount * -1);
+				}
+				18.75% {
+					transform: translateY($translateAmount * -1);
+				}
+				25% {
+					transform: translateY($translateAmount * -2);
+				}
+				31.25% {
+					transform: translateY($translateAmount * -2);
+				}
+				37.5% {
+					transform: translateY($translateAmount * -3);
+				}
+				43.75% {
+					transform: translateY($translateAmount * -3);
+				}
+				50% {
+					transform: translateY($translateAmount * -4);
+				}
+				56.25% {
+					transform: translateY($translateAmount * -4);
+				}
+				62.5% {
+					transform: translateY($translateAmount * -5);
+				}
+				68.75% {
+					transform: translateY($translateAmount * -5);
+				}
+				75% {
+					transform: translateY($translateAmount * -6);
+				}
+				81.25% {
+					transform: translateY($translateAmount * -6);
+				}
+				87.5% {
+					transform: translateY($translateAmount * -7);
+				}
+				93.75% {
+					transform: translateY($translateAmount * -7);
+				}
+				100% {
+					transform: translateY(0);
+				}
+			}
+
 			#scroller {
 				list-style-type: none;
 				padding: 0;
 				margin: 0 0 (_size(element-margin) * 0.125) 0;
 
-				max-height: 88px;
+				max-height: $translateAmount;
 				overflow: hidden;
 				
 				li {
 					padding: 0;
-					height: 88px;
+					height: $translateAmount;
 				}
 				.elevator {
-					// Translate by -5.5em every transition;
-					transform: translateY(0em);
 					transition: transform 0.3s ease-in-out;
+					animation: 10s moveup infinite;
+					animation-delay: 1.75s;
 				}
 			}
 		}
@@ -106,6 +162,9 @@
 					max-height: 88px;
 					li {
 						height: 88px;
+					}
+					.elevator {
+						animation: none;
 					}
 				}
 			}

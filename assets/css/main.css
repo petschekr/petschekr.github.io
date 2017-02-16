@@ -1028,7 +1028,8 @@ table.alt tbody tr td {
     justify-content: center;
     align-items: center; }
     #header.alt h1 {
-      font-size: 3.25em; }
+      font-size: 3.25em;
+      white-space: nowrap; }
     #header.alt p:first-of-type {
       font-size: 1.5em;
       margin: 0; }
@@ -1040,6 +1041,41 @@ table.alt tbody tr td {
       transition: opacity 1.5s ease;
       transition-delay: 0.4s;
       opacity: 1; }
+@keyframes moveup {
+  0% {
+    transform: translateY(0); }
+  6.25% {
+    transform: translateY(0); }
+  12.5% {
+    transform: translateY(-88px); }
+  18.75% {
+    transform: translateY(-88px); }
+  25% {
+    transform: translateY(-176px); }
+  31.25% {
+    transform: translateY(-176px); }
+  37.5% {
+    transform: translateY(-264px); }
+  43.75% {
+    transform: translateY(-264px); }
+  50% {
+    transform: translateY(-352px); }
+  56.25% {
+    transform: translateY(-352px); }
+  62.5% {
+    transform: translateY(-440px); }
+  68.75% {
+    transform: translateY(-440px); }
+  75% {
+    transform: translateY(-528px); }
+  81.25% {
+    transform: translateY(-528px); }
+  87.5% {
+    transform: translateY(-616px); }
+  93.75% {
+    transform: translateY(-616px); }
+  100% {
+    transform: translateY(0); } }
     #header.alt #scroller {
       list-style-type: none;
       padding: 0;
@@ -1050,8 +1086,9 @@ table.alt tbody tr td {
         padding: 0;
         height: 88px; }
       #header.alt #scroller .elevator {
-        transform: translateY(0em);
-        transition: transform 0.3s ease-in-out; }
+        transition: transform 0.3s ease-in-out;
+        animation: 10s moveup infinite;
+        animation-delay: 1.75s; }
   @media screen and (max-width: 1280px) {
     #header {
       padding: 4em 4em 0.1em 4em ; }
@@ -1077,7 +1114,9 @@ table.alt tbody tr td {
         #header.alt #scroller {
           max-height: 88px; }
           #header.alt #scroller li {
-            height: 88px; } }
+            height: 88px; }
+          #header.alt #scroller .elevator {
+            animation: none; } }
   @media screen and (max-width: 480px) {
     #header {
       padding: 3em 1.5em 0.1em 1.5em ; }
