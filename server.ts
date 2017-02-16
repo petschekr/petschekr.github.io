@@ -20,7 +20,7 @@ let [indexTemplate] = ["index.html"].map(file => {
 
 app.route("/").get((request, response) => {
 	response.send(indexTemplate({
-
+		year: new Date().getFullYear().toString()
 	}));
 });
 app.use("/assets", serveStatic(path.resolve(__dirname, "assets")));
