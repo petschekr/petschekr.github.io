@@ -41,6 +41,7 @@
 				margin: 0 0.35em;
 				padding: 0;
 				vertical-align: middle;
+				text-transform: uppercase;
 
 				a {
 					@include vendor('transition', (

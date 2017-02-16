@@ -1260,10 +1260,14 @@ body {
     min-width: 320px; } }
 body {
   background-color: #935d8c;
-  background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-  background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-  background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-  background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%); }
+  background-image: url("images/BoA.svg"), -moz-linear-gradient(45deg, #23A3B4 15%, #2A374F 85%);
+  background-image: url("images/BoA.svg"), -webkit-linear-gradient(45deg, #23A3B4 15%, #2A374F 85%);
+  background-image: url("images/BoA.svg"), -ms-linear-gradient(45deg, #23A3B4 15%, #2A374F 85%);
+  background-image: url("images/BoA.svg"), linear-gradient(45deg, #23A3B4 15%, #2A374F 85%);
+  background-attachment: fixed;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain; }
   body.is-loading *, body.is-loading *:before, body.is-loading *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -2277,9 +2281,21 @@ table.alt tbody tr td {
     font-size: 1.25em;
     letter-spacing: -0.025em; }
   #header.alt {
-    padding: 7em 5em 4em 5em ; }
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     #header.alt h1 {
       font-size: 3.25em; }
+    #header.alt p:first-of-type {
+      font-size: 1.5em;
+      margin: 0; }
+    #header.alt #hint {
+      position: absolute;
+      bottom: 5vh;
+      font-size: 1.5em; }
     #header.alt > * {
       -moz-transition: opacity 3s ease;
       -webkit-transition: opacity 3s ease;
@@ -2291,10 +2307,10 @@ table.alt tbody tr td {
       transition-delay: 0.5s;
       opacity: 1; }
     #header.alt .logo {
-      -moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
-      -webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;
-      -ms-transition: opacity 1.25s ease, -ms-transform 0.5s ease;
-      transition: opacity 1.25s ease, transform 0.5s ease;
+      -moz-transition: opacity 1s ease, -moz-transform 0.5s ease;
+      -webkit-transition: opacity 1s ease, -webkit-transform 0.5s ease;
+      -ms-transition: opacity 1s ease, -ms-transform 0.5s ease;
+      transition: opacity 1s ease, transform 0.5s ease;
       -moz-transition-delay: 0s;
       -webkit-transition-delay: 0s;
       -ms-transition-delay: 0s;
@@ -2391,7 +2407,8 @@ table.alt tbody tr td {
       display: inline-block;
       margin: 0 0.35em;
       padding: 0;
-      vertical-align: middle; }
+      vertical-align: middle;
+      text-transform: uppercase; }
       #nav ul li a {
         -moz-transition: font-size 0.2s ease;
         -webkit-transition: font-size 0.2s ease;
