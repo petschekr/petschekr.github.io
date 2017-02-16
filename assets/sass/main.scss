@@ -22,13 +22,7 @@
 
 	@include skel-layout((
 		reset: 'full',
-		boxModel: 'border',
-		grid: ( gutters: 1.5em ),
-		breakpoints: (
-			small: (
-				grid: ( gutters: 1em ),
-			)
-		)
+		boxModel: 'border'
 	));
 
 	@mixin color($p) {
