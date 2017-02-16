@@ -99,6 +99,8 @@ em, i {
 
 p {
   margin: 0 0 2em 0; }
+  p + p.reduce {
+    margin-top: -1em; }
   p.content {
     -moz-columns: 20em 2;
     -webkit-columns: 20em 2;

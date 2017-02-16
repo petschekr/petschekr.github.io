@@ -54,6 +54,9 @@
 
 	p {
 		margin: 0 0 _size(element-margin) 0;
+		& + p.reduce {
+			margin-top: _size(element-margin) * -0.5;
+		}
 
 		&.content {
 			-moz-columns: 20em 2;
