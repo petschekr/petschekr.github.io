@@ -2,3 +2,5 @@
 assets/css/main.css.map
 node_modules/
 server.js
+
+\.vscode/

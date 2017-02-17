@@ -971,6 +971,7 @@ table.alt tbody tr td {
 .spotlight {
   display: flex;
   align-items: center;
+  flex-direction: column;
   margin: 0 0 2em 0; }
   .spotlight .content {
     flex: 1; }
@@ -978,9 +979,12 @@ table.alt tbody tr td {
       margin-bottom: 0; }
     .spotlight .content header.major {
       margin: 0 0 2em 0; }
+    .spotlight .content .actions {
+      text-align: center; }
   .spotlight .image {
-    display: inline-block;
-    margin-left: 4em;
+    float: right;
+    margin-left: 2em;
+    margin-bottom: 2em;
     padding: 0.65em;
     border-radius: 100%;
     border: solid 1px; }
@@ -1001,7 +1005,8 @@ table.alt tbody tr td {
       .spotlight .image {
         flex: 0 1 auto;
         margin-left: 0;
-        margin-bottom: 2em; } }
+        margin-bottom: 2em;
+        float: none; } }
   @media screen and (max-width: 736px) {
     .spotlight .image {
       padding: 0.35em; }

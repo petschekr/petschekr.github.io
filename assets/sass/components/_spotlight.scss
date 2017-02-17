@@ -7,8 +7,9 @@
 /* Spotlight */
 
 	.spotlight {
-		@include vendor('display', 'flex');
-		@include vendor('align-items', 'center');
+		display: flex;
+		align-items: center;
+		flex-direction: column;
 		margin: 0 0 _size(element-margin) 0;
 
 		.content {
@@ -23,11 +24,17 @@
 					margin: 0 0 _size(element-margin) 0;
 				}
 			}
+
+			.actions {
+				text-align: center;
+			}
 		}
 
 		.image {
-			display: inline-block;
-			margin-left: 4em;
+			float: right;
+			// display: inline-block;
+			margin-left: 2em;
+			margin-bottom: _size(element-margin);
 			padding: 0.65em;
 			border-radius: 100%;
 			border: solid 1px;
@@ -63,6 +70,7 @@
 				@include vendor('flex', '0 1 auto');
 				margin-left: 0;
 				margin-bottom: _size(element-margin);
+				float: none;
 			}
 		}
 
