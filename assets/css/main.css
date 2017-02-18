@@ -918,7 +918,8 @@ table.alt tbody tr td {
     flex: 1;
     padding: 1.5em;
     color: #ffffff;
-    text-align: center; }
+    text-align: center;
+    line-height: 28px; }
     .statistics li.style1 {
       background-color: #1985a1; }
     .statistics li.style2 {
@@ -935,7 +936,8 @@ table.alt tbody tr td {
       line-height: 1.1;
       color: inherit !important;
       font-weight: 300;
-      letter-spacing: -0.025em; }
+      letter-spacing: -0.025em;
+      margin-bottom: 12px; }
     .statistics li:first-child {
       border-top-left-radius: 8px;
       border-bottom-left-radius: 8px; }
@@ -983,6 +985,7 @@ table.alt tbody tr td {
       text-align: center; }
   .spotlight .image {
     float: right;
+    margin-top: -6em;
     margin-left: 2em;
     margin-bottom: 2em;
     padding: 0.65em;
@@ -1004,6 +1007,7 @@ table.alt tbody tr td {
           margin-right: auto; }
       .spotlight .image {
         flex: 0 1 auto;
+        margin-top: 0;
         margin-left: 0;
         margin-bottom: 2em;
         float: none; } }

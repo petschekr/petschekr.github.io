@@ -19,6 +19,7 @@
 			padding: 1.5em;
 			color: _palette(fg-bold);
 			text-align: center;
+			line-height: 28px;
 
 			&.style1 {
 				background-color: _palette(accent1);
@@ -47,6 +48,7 @@
 				color: inherit !important;
 				font-weight: _font(weight);
 				letter-spacing: _font(letter-spacing);
+				margin-bottom: 12px;
 			}
 
 			&:first-child {

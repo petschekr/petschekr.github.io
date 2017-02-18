@@ -33,6 +33,7 @@
 		.image {
 			float: right;
 			// display: inline-block;
+			margin-top: -6em;
 			margin-left: 2em;
 			margin-bottom: _size(element-margin);
 			padding: 0.65em;
@@ -68,6 +69,7 @@
 
 			.image {
 				@include vendor('flex', '0 1 auto');
+				margin-top: 0;
 				margin-left: 0;
 				margin-bottom: _size(element-margin);
 				float: none;

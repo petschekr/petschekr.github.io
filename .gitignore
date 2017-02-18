@@ -4,3 +4,7 @@ node_modules/
 server.js
 
 \.vscode/
+
+secrets\.json
+
+*.map
