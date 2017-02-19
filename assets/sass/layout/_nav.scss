@@ -60,7 +60,8 @@
 					}
 
 					&.active {
-						background-color: _palette(invert, bg);
+						//background-color: _palette(invert, bg);
+						background-color: #e8e8e8;
 						box-shadow: none;
 					}
 				}
