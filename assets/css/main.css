@@ -51,7 +51,6 @@ body {
   html, body {
     min-width: 320px; } }
 body {
-  background-color: #935d8c;
   background-image: url("images/BoA.svg"), linear-gradient(45deg, #23A3B4 15%, #2A374F 85%);
   background-attachment: fixed;
   background-position: bottom right;
@@ -63,7 +62,7 @@ body {
 
 /* Type */
 body {
-  background-color: #935d8c;
+  background-color: #276d82;
   color: rgba(255, 255, 255, 0.65); }
 
 body, input, select, textarea {
@@ -527,7 +526,7 @@ input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
   background-color: #ffffff;
   border-color: #ffffff;
-  color: #935d8c; }
+  color: #276d82; }
 input[type="checkbox"]:focus + label:before,
 input[type="radio"]:focus + label:before {
   border-color: #276d82;

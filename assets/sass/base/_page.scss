@@ -24,7 +24,6 @@
 		}
 
 	body {
-		background-color: _palette(bg);
 		@include vendor('background-image', (
 			'url("images/BoA.svg")',
 			'linear-gradient(45deg, #{_palette(bg1)} 15%, #{_palette(bg2) 85%})',
