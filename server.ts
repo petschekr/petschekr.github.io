@@ -19,7 +19,7 @@ let [indexTemplate] = ["index.html"].map(file => {
 	return Handlebars.compile(data);
 });
 // Set up the GitHub API
-let githubToken: string = JSON.parse(fs.readFileSync("secrets.json", "utf8")).github;
+let githubToken: string = JSON.parse(fs.readFileSync(path.resolve(__dirname, "secrets.json"), "utf8")).github;
 let github = new GitHub({
 	"username": "petschekr",
 	"password": githubToken
