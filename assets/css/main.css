@@ -670,6 +670,11 @@ ul {
   list-style: disc;
   margin: 0 0 2em 0;
   padding-left: 1em; }
+  ul ul {
+    list-style: circle;
+    margin: 0;
+    padding-left: 1.5em;
+    font-size: 0.9em; }
   ul li {
     padding-left: 0.5em; }
   ul.alt {
